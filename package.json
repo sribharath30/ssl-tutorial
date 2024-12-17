@@ -4,7 +4,8 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "server-start": "node server/app.js",
+    "client-start": "node client/index.js"
   },
   "author": "",
   "license": "ISC",

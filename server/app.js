@@ -6,8 +6,8 @@ import fs from 'fs';
 const app = express();
 const PORT = '3000';
 const options = {
-    key: fs.readFileSync('.ssl/private-key.pem'),
-    cert: fs.readFileSync('.ssl/certificate.pem')
+    key: fs.readFileSync('server/.ssl/private-key.pem'),
+    cert: fs.readFileSync('server/.ssl/certificate.pem')
   };
 app.get('/',(req,res)=>{
     res.send('Hello world');
